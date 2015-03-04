@@ -1,0 +1,13 @@
+With the Jacobi iteration method:
+The absolute error is: 6.33640915737e-07 , with k= 13
+The solution vector is: [ 36.5384609   46.15384568  48.07692284  46.15384606  36.53846152]
+
+
+With the Gauss Seidel iteration method:
+The absolute error is: 6.33640915737e-07 , with k= 13
+The solution vector is: [ 36.5384609   46.15384568  48.07692284  46.15384606  36.53846152]
+
+
+With the SOR iteration method:
+The absolute error is: 2.37655711999e-07 , with k= 10
+The solution vector is: [ 36.53846178  46.15384617  48.07692314  46.15384605  36.53846153]

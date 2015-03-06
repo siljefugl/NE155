@@ -132,6 +132,7 @@ wopt=1.1
 eopt=7.6556794113*10**-06
 for i in range(len(omega)):
     k=1
+    er=10
     while er>1*10**-6:
         solSOR1=SOR(A,b,k,omega[i])
         k+=1
@@ -142,7 +143,6 @@ for i in range(len(omega)):
             rer=0 
     print k        
     if (k<kmin):
-        print k
         kmin=copy.copy(k)
         eopt=copy.copy(er)
         wopt=omega[i]

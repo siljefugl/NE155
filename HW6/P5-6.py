@@ -1,4 +1,4 @@
-#HW6, problem 5
+#HW6, problem 5&6
 import numpy      
 import matplotlib.pyplot as plt     
 import copy 
@@ -89,10 +89,14 @@ kvals, kvec = numpy.linalg.eig(numpy.asarray(B))
 k2=numpy.max(kvals)
 print "Eigenvalue, built in solvers: ", k2
 i=numpy.argmax(kvals)
-vec=kvec[i]
+vec=-kvec[:,i] #It's just upside down
 
 x=numpy.linspace(-a,a, num=2*a/h)
 
+reler=numpy.linalg.norm((vec-phi)/vec)
+abser=numpy.linalg.norm(vec-phi)
+print "Relative error: ", reler
+print "Absolute error: ", abser
 plt.figure()
 plt.plot(x,phi)
 plt.plot(x,vec, 'r')
